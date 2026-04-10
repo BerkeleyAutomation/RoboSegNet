@@ -4,27 +4,27 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta name="description" content="RoboSegNet learns multi-task robot trajectory segmentation from fused visual and kinematic streams, with a RoboSegData benchmark from Agibot.">
+  <meta property="og:title" content="RoboSegNet: Multi-Task Robot Trajectory Segmentation"/>
+  <meta property="og:description" content="Joint visual–kinematic segmentation with DCT tokenization, ViT features, cross-modal attention, and Hungarian matching. Introduces RoboSegData."/>
+  <meta property="og:url" content="https://berkeleyautomation.github.io/robosegnet/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image" content="static/images/robosegnet_overview.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="RoboSegNet: Multi-Task Robot Trajectory Segmentation">
+  <meta name="twitter:description" content="Joint visual–kinematic trajectory segmentation with RoboSegData benchmark.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:image" content="static/images/robosegnet_overview.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="robot learning, trajectory segmentation, multimodal learning, manipulation, proprioception, computer vision, RoboSegNet, RoboSegData">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Robo2VLM</title>
+  <title>RoboSegNet | Multi-Task Robot Trajectory Segmentation</title>
   <link rel="icon" type="image/x-icon" href="static/images/Wizard_Icon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,61 +52,33 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Robo2VLM: <br/>
-              Improving Visual Question Answering using Large-Scale Robot Manipulation Data</h1>
+            <h1 class="title is-2 publication-title">Learning Multi-Task Robot Trajectory Segmentation <br/>
+              from Visual and Kinematic Streams</h1>
+            <!-- <p class="subtitle is-4 has-text-weight-semibold" style="margin-top: 0.5rem;">RoboSegNet</p> -->
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://keplerc.github.io/" target="_blank">Kaiyuan Chen</a><sup>*,1</sup>,</span>
-                <span class="author-block">
-                  <a href="https://ehehee.github.io/" target="_blank">Shuangyu Xie</a><sup>*,1</sup>,</span>
-                  <span class="author-block">
-                    <a target="_blank">Zehan Ma</a><sup>1</sup>,</span>
-                    <span class="author-block">
-                    <a href="https://research.google/people/pannagrsanketi/" target="_blank">Pannag Sanketi</a><sup>2</sup>,</span>
-                    <span class="author-block">
-                    <a href="https://goldberg.berkeley.edu/" target="_blank">Ken Goldberg</a><sup>1</sup>,</span>
-                    <span class="author-block">
-                  </div>
+                <a href="https://keplerc.github.io/" target="_blank">Kaiyuan Chen</a><sup>*,1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://ehehee.github.io/" target="_blank">Shuangyu Xie</a><sup>*,1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/andrewpgoldberg/" target="_blank">Andrew Goldberg</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://goldberg.berkeley.edu/" target="_blank">Ken Goldberg</a><sup>1</sup>
+              </span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>UC Berkeley, <sup>2</sup>Google DeepMind</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>University of California, Berkeley</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Equal contribution</small></span>
+            </div>
 
-                  <div class="is-size-5 publication-authors" style="margin-top: 0.75rem;">
-                    <span style="display: inline-block; background: linear-gradient(135deg, #7B2D8E 0%, #4A1259 100%); color: white; padding: 0.4rem 1rem; border-radius: 2rem; font-weight: 600; font-size: 0.95rem; box-shadow: 0 2px 8px rgba(123, 45, 142, 0.3);">
-                      🏆 NeurIPS 2025 Spotlight
-                    </span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2505.15517.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <!-- <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span> -->
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/KeplerC/robo2VLM" target="_blank"
+            <!-- <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://github.com/BerkeleyAutomation/robosegnet" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -114,49 +86,27 @@
                     <span>Code</span>
                   </a>
                 </span>
-                  <!-- Huggingface link -->
-                  <span class="link-block">
-                    <a href="https://huggingface.co/datasets/keplerccc/Robo2VLM-1" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      🤗
-                    </span>
-                    <span>Dataset</span>
-                  </a>
-                </span>
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2505.15517" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-            </div>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
-  </div>
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser / Figure 1 -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/VQA-examples2.png" alt="Robo2VLM Teaser" style="max-width: 100%; height: auto;">
+      <img src="static/images/roboseg-title.png" alt="RoboSegNet overview: visual and kinematic streams fused to predict trajectory segment boundaries" style="max-width: 100%; height: auto;">
       <h2 class="subtitle has-text-centered">
-       <strong>Robo2VLM dataset overview.</strong> 
-         <!-- The middle colorbar traces a typical manipulation episode—from pre-grasp through immobilization, contact, detach, and into post-grasp. Surrounding panels give example questions for each VQA category. Dashed arrows connect every category to the phase(s) in which its questions are sampled. Icons beneath each panel list the key sensing modalities (RGB, stereo depth, wrist/side cameras, gripper state, end-effector pose, language instructions) needed to derive ground-truth answers. -->
-        <!-- Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.  -->
+        <strong>Figure 1.</strong> RoboSegNet processes an image stream (DINOv3) and a kinematic stream (FAST), fuses them with cross-attention (frequency synchronization), and uses a transformer encoder–decoder to predict transition probabilities over time—for example segmenting an insertion into phases such as Grasp, Insert, and Nudge.
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End teaser -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -166,7 +116,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Vision-Language Models (VLMs) acquire real-world knowledge and general reasoning ability through Internet-scale image-text corpora. They can augment robotic systems with scene understanding and task planning, and assist visuomotor policies that are trained on robot trajectory data. We explore the reverse paradigm — using rich, real, multi-modal robot trajectory data to enhance and evaluate VLMs. In this paper, we present Robo2VLM, a Visual Question Answering (VQA) dataset generation framework for VLMs. Given a human tele-operated robot trajectory, Robo2VLM derives ground-truth from non-visual and non-descriptive sensory modalities, such as end-effector pose, gripper aperture, and force sensing. Based on these modalities, it segments the robot trajectory into a sequence of manipulation phases. At each phase, Robo2VLM uses scene and interaction understanding to identify 3D properties of the robot, task goal, and the target object. The properties are used to generate representative VQA queries – images with textural multiple-choice questions – based on spatial, goal-conditioned, and interaction reasoning question templates. We curate Robo2VLM-1, a large-scale in-the-wild dataset with 684,710 questions covering 463 distinct scenes and 3,396 robotic manipulation tasks from 176k real robot trajectories. Results suggest that Robo2VLM-1 can benchmark and improve VLM capabilities in spatial and interaction reasoning.          </p>
+            Segmenting robot demonstration trajectories into semantically coherent parts is key to efficient policy learning, skill reuse, and recovery from failure. We present <strong>RoboSegNet</strong>, a multi-task framework that jointly learns from <strong>visual</strong> and <strong>kinematic</strong> proprioceptive signals. Kinematic trajectories are encoded with a <strong>Discrete Cosine Transform (DCT)-based tokenizer</strong>; images are encoded with a <strong>visual transformer</strong>. The two modalities are fused with <strong>bidirectional cross-modal attention</strong>, and transition boundaries are predicted via <strong>Hungarian matching</strong>. We introduce <strong>RoboSegData</strong>, a benchmark built from the Agibot dataset with dense frame-level transition annotations. RoboSegNet achieves strong performance on RoboSegData and generalizes in <strong>zero shot</strong> to unseen scenes, tasks, and skills.
+          </p>
         </div>
       </div>
     </div>
@@ -175,148 +126,20 @@
 <!-- End paper abstract -->
 
 
-<section class="section hero is-small">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <div class="content">
-          <h2 class="title is-3">Robo2VLM Pipeline</h2>
-         <p>
-              <img src="static/images/robo2vlm_pipeline.png" alt="Directional Weight Score" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
-            </p>
-            <p>
-              Robo2VLM generates multi-modal real-world robot trajectories through (1) manipulation phase classification, (2) keyframe selection guided by scene and interaction cues, and (3) structured VQA question prototype.
-            </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Dataset Viewer -->
-<section class="section hero is-light">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <div class="content">
-          <h2 class="title is-3">Robo2VLM-1 Dataset Explorer</h2>
-          <p>
-            Explore the Robo2VLM-1 dataset interactively using the Hugging Face dataset viewer below.
-          </p>
-          <div style="display: flex; justify-content: center; width: 100%; overflow-x: auto;">
-            <iframe
-              src="https://huggingface.co/datasets/keplerccc/Robo2VLM-1/embed/viewer/default/train"
-              frameborder="0"
-              width="150%"
-              height="560px"
-              style="max-width: 150%;"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section hero is-small">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <div class="content">
-          <h2 class="title is-3">Question Prototype</h2>
-         <p>
-              <img src="static/images/question-prototype.png" alt="Directional Weight Score" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
-            </p>
-            <p>
-
-
-
-            </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <div class="content">
-          <h2 class="title is-3">Robo2VLM-1 Dataset Statistics</h2>
-         <p>
-              <img src="static/images/data_stats.png" alt="Directional Weight Score" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
-            </p>
-            <p>
-              Distribution and key statistics of Robo2VLM-1 dataset. (Left) Robo2VLM-1covers diverse scenes with the most frequent scenes in office (33.6%), lab (25.3%), and kitchen (16.9\%). (Middle) Robo2VLM-1 covers tasks including common manipulation actions include pick (21.5%), put (20.6%), and move (9.9%). (Right) The table summarizes key dataset statistics including question characteristics, answer choices, and image resolutions.            </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section hero is-small">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <div class="content">
-          <h2 class="title is-3">Benchmarking VLM Capabilities</h2>
-         <p>
-              <img src="static/images/benchmark-stats.png" alt="Directional Weight Score" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
-            </p>
-            <p>Performance Comparison of Multimodal Foundation Models on OpenX-VQA Benchmark Categories (%). Upper part: zero-shot. Lower part: with CoT prompting.
-            </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <div class="content">
-          <h2 class="title is-3">Finetuning Results</h2>
-         <p>
-              <img src="static/images/finetune_breakdown.png" alt="Directional Weight Score" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
-            </p>
-            <p>
-              Fine-tuning LLaVA 1.6 with increasing training data of robo2vlm-1 from 10k to 50k VQA items. Accuracy improvements almost all categories compared to no fine-tuning.        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>
-  @inproceedings{chenrobo2vlm,
-    title={Robo2VLM: Improving Visual Question Answering using Large-Scale Robot Manipulation Data},
-    author={Chen, Kaiyuan and Xie, Shuangyu and Ma, Zehan and Sanketi, Pannag R and Goldberg, Ken},
-    booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track}
-  }
-  
-  @misc{chen2025robo2vlmvisualquestionanswering,
-    title={Robo2VLM: Visual Question Answering from Large-Scale In-the-Wild Robot Manipulation Datasets}, 
-    author={Kaiyuan Chen and Shuangyu Xie and Zehan Ma and Pannag Sanketi and Ken Goldberg},
-    year={2025},
-    eprint={2505.15517},
-    archivePrefix={arXiv},
-    primaryClass={cs.RO},
-    url={https://arxiv.org/abs/2505.15517}, 
-  }</code></pre>
+      <pre><code>@misc{chen2026robosegnet,
+  title={Learning Multi-Task Robot Trajectory Segmentation from Visual and Kinematic Streams},
+  author={Chen, Kaiyuan and Xie, Shuangyu and Goldberg, Andrew and Goldberg, Ken},
+  year={2026},
+  url={https://berkeleyautomation.github.io/robosegnet/},
+  note={Project page; add arXiv identifier when available}
+}</code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
 
